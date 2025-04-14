@@ -15,5 +15,5 @@ class ITAS_CRANE_API USandPileGenerateHelpers : public UBlueprintFunctionLibrary
 public:
 
 	UFUNCTION(BlueprintCallable, meta=(DeterminesOutputType="AccumulatedPoints"))
-	static void ProcessPointsAndUpdateMesh(TArray<FVector> AccumulatedPoints, UDynamicMesh* Mesh3);
+	static UDynamicMesh* ProcessPointsAndUpdateMesh(const TArray<FVector>& AccumulatedPoints, UDynamicMesh* Mesh3);
 };
